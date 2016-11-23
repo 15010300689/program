@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最小最大缩放比例为一，不允许用户手机缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止iOS设备将数字作为拨号连接、邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- webapp应用下状态条(平模顶部条)的颜色，默认值为default(白色或黑色半透明) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从缓存中访问页面内容 -->
+	<meta http-epuiv="Pragma" content="no-cache">
+	<title>搜索页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="index.html" class="back"></a>
+			<span class="search">搜索</span>
+			<p><input type="text" placeholder="请输入关键词搜索"></p>
+		</header>
+		<main class="main ">
+			<div class="swiper_box swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="hot swiper-slide">热门</li>
+					<li class="swiper-slide"><a href="javascript:void(0);">立通</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">杰士邦</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">黄藤素片</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">冈本</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">杜蕾斯</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">伟哥</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">希爱力</a></li>
+					<li class="swiper-slide"><a href="javascript:void(0);">溴吡斯的明片</a></li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<script src="js/setfontsize.js"></script>
+	<script src="js/swiper-3.4.0.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper_box.swiper-container',{
+		       slidesPerView:5,
+		       paginationClickable: true,
+		       spaceBetween:0,
+		       freeMode: true
+		   });
+	</script>
+</body>
+</html>

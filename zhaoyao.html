@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最小最大缩放比例为一，不允许用户手机缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止iOS设备将数字作为拨号连接、邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- webapp应用下状态条(平模顶部条)的颜色，默认值为default(白色或黑色半透明) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从缓存中访问页面内容 -->
+	<meta http-epuiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/zhaoyao.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>商品分类</h1>
+			<a href="index.html" class="back"></a>
+			<a href="javascript:void(0);" class="search"><i class="fa fa-search"></i></a>
+		</header>
+		<main class="main">
+			<aside class="side_bar">
+				<ul id="lists">
+					<li><a href="javascript:void(0);" class="bj" data-tit="zhongxi">中西药品</a></li>
+					<li><a href="javascript:void(0);" data-tit="yangsheng">养生保健</a></li>
+					<li><a href="javascript:void(0);" data-tit="yiliao">医疗器械</a></li>
+					<li><a href="javascript:void(0);" data-tit="jisheng">计生用品</a></li>
+					<li><a href="javascript:void(0);" data-tit="zhongyao">中药饮片</a></li>
+					<li><a href="javascript:void(0);" data-tit="meirong">美容护肤</a></li>
+				</ul>
+			</aside>
+			<section class="lists_con" id="lists_con">
+				<div class="lists_scroll">
+					<!-- 此处为渲染内容 -->
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<a href="index.html"><i class="fa fa-home"></i><span>首页</span></a>
+			<a href="zhaoyao.html" class="bj"><i class="fa fa-list"></i><span>分类</span></a>
+			<a href="shopping_cart.html"><i class="fa fa-spinner"></i><span>购物车</span></a>
+			<a href="my.html"><i class="fa fa-user"></i><span>账号</span></a>
+		</footer>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zhaoyao.js"></script>
+</body>
+</html>

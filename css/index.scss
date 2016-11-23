@@ -1,0 +1,487 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+li{
+	list-style: none;
+}
+/*-------------------account--------------*/
+html,body,.box{
+	width: 100%;
+	height: 100%;
+    overflow:hidden;
+	font-size: 0.32rem;
+}
+%posr{
+	position: relative;
+}
+%posa{
+	position: absolute;
+}
+.box{
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+}
+.main{
+    -webkit-flex:1;
+    background:#f0f0f0;
+}
+.my_info{
+    width:100%;
+    height:110px;
+    background:#00aa22;
+    p{
+        line-height:30px;
+        text-align:right;
+        padding-right:10px;
+        a{
+            color:#fff;
+            font-size:18px;
+            padding-left:10px;
+        }
+    }
+    .myaccount{
+        width:100%;
+        display:block;
+        margin-top:10px;
+        height:50px;
+       .account_detail{
+             width:100%;
+             display:-webkit-flex;
+       }
+        dt{
+            width:50px;
+            height:50px;
+            border:2px solid lightgreen;
+            border-radius:50%;
+            line-height:50px;
+            text-align:center;
+            color:#fff;
+            font-size:20px;
+            margin:0 10px;
+            i{
+                font-size:25px;
+            }
+        }
+        dd{
+            font-size:14px;
+            line-height:20px;
+            color:#fff;
+            h3{
+                font-size:14px;
+            }
+            .score{
+                font-size:12px;
+                span{
+                    padding-right:10px;
+                }
+                b{
+                    color:lightyellow;
+                    font-style:normal;
+                }
+            }
+        }
+    }
+}
+.myfile{
+    width:100%;
+    font-size:0;
+    border-bottom:1px solid #ccc;
+    background:#fff;
+    a{
+        display:inline-block;
+        width:20%;
+        font-size:12px;
+        text-align:center;
+        padding:18px 0 10px 0;
+        color:#333;
+        i{
+            display:block;
+            font-size:18px;
+            margin-bottom:5px;
+        }
+        &:last-child{
+            border-left:1px solid #ccc;
+            position:relative;
+            &:before{
+                position:absolute;
+                left:-4px;top:50%;
+                margin-top:-3px;
+                content:"";
+                width:4px;
+                height:4px;
+                background:#fff;
+                border:1px solid #ccc;
+                border-left-color:transparent;
+                border-bottom-color:transparent;
+                -webkit-transform:rotate(45deg);
+            }
+        }
+    }
+}
+.nav{
+     width:100%;
+     display:-webkit-flex;
+     -webkit-flex-wrap:wrap;
+     margin-top:10px;
+     background:#fff;
+     a{
+        width:25%;
+        -webkit-flex-shrink:0;
+        text-align:center;
+        padding-bottom:10px;
+        font-size:12px;
+        color:#333;
+        border-bottom:1px solid #ccc;
+        img{
+            width:50px;
+            height:50px;
+        }
+        span{
+            display:block;
+        }
+     }
+}
+.opinion{
+    margin-top:10px;
+    background:#fff;
+    li{
+        height:40px;
+        line-height:40px;
+        border-bottom:1px solid #ccc;
+        padding-left:8px;
+        a{
+            color:#333;
+            font-size:12px;
+            position:relative;
+            display:block;
+            &:after{
+                position:absolute;
+                content:"";
+                width:8px;
+                height:8px;
+                border:1px solid #ccc;
+                border-left-color:transparent;
+                border-bottom-color:transparent;
+                -webkit-transform:rotate(45deg);
+                right:10px;
+                top:50%;
+                margin-top:-4px;
+            }
+        }
+    }
+}
+.footer{
+    width:100%;
+    height:1.16rem;
+    border-top:1px solid #ccc;
+    font-size:0;
+    padding:2px 0;
+    position:relative;
+    z-index:333;
+    a{
+        width:25%;
+        display:inline-block;
+        font-size:12px;
+        text-align:center;
+        color:#333;
+    }
+    i{
+        display:block;
+        font-size:18px;
+        padding:4px 0;
+    }
+    span{
+        display:block;
+        font-size:12px;
+    }
+    .bj{
+        color:#00aa22;
+    }
+}
+/*--------------购物车-------------*/
+.shopping_header{
+	width: 100%;
+	height: 0.88rem;
+	background: #fff;
+    border-bottom: 1px solid #ccc;
+    @extend %posr;
+    a{
+        @extend %posa;
+        left:10px;
+        font-size: 36px;
+        text-decoration: none;
+        color: forestgreen
+    }
+    h3{
+        text-align: center;
+        line-height: 0.88rem;
+    }
+    label{
+         @extend %posa;
+        right:10px;
+        top:8px;
+        font-size: 25px;
+        text-decoration: none;
+        color:#ccc;
+    }
+}
+.shopping_main{
+	overflow:auto;
+	width: 100%;
+	-webkit-flex: 1;
+	background: #f5f5f5;
+	@extend %posr;
+    .shopping_icon{
+         text-align: center;
+        //line-height: 25px;
+        h4{
+            color:#666;
+            font-size: 0.4rem;
+            font-weight:300;
+        }
+        p{
+            color:#666;
+            font-size: 0.3rem;
+            padding:10px 0px;
+        }
+        button{
+            background: #00aa22;
+            width: 100px;
+            color: #fff;
+            font-size: 0.25rem;
+            line-height: 35px;
+            border: none;
+            outline: none;
+            margin: 20px auto;
+        }
+    }
+    .shopping_img{
+        text-align: center;
+        margin: 25px 0px;
+        font-size: 200px;
+        color: #ccc;
+    }
+    .shopping_line{
+        border-bottom: 1px solid #ddd;
+        height: 13px;
+        margin:15px auto 25px;
+        position: relative;
+        text-align: center;
+        width: 98%;
+        span{
+            background: #f5f5f5;
+            display: block;
+            font-size: 0.25rem;
+            margin: 0 auto;
+            width: 130px;
+            color:#666;
+        }
+    }
+    .shopping_grid{
+        width:100%;
+        .item{
+            width: 50%;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background: #fff;
+            border: 2px solid #f5f5f5;
+            float: left;
+            dt{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd{
+                text-align: center;
+                color:black;
+                display: block;
+                line-height: 0.5rem;
+                padding: 0 0.3rem;
+                h4{
+                    font-size: 0.3rem;
+                    font-weight: 300;
+                }
+                p{
+                  font-size: 0.25rem;
+                    margin-top: 10px;
+                    color:#999;
+                }
+                small{
+                    color: #FF3F00;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.shopping_footer,.my_footer{
+	padding-top: 0.1rem;
+	width: 100%;
+	height: 1rem;
+	display: flex;
+	background: #fff;
+	border-top: 2px solid #efefef;
+	span{
+		-webkit-flex: 1;
+		text-align: center;
+		line-height: 0.4rem;
+		width: 25%;
+        a{
+            color: #333333;
+        }
+	}
+    .like{
+        color: #00aa22;
+        a{
+          color: #00aa22;
+        }
+    }
+}
+.my_header{
+    height: 3.11rem;
+    background:#00aa22;
+    @extend %posr;
+    .my_right{
+        @extend %posa;
+        top:0.3rem;
+        right:0.2rem;
+        i{
+            color: #fff;
+            padding: 0 8px;
+            font-size: 0.5rem;
+        }
+    }
+    .my_logo{
+        dl{
+            width:100%;
+            margin-top:1.34rem;
+            dt{
+                @extend %posa;
+                top:1.34rem;
+                left:0.34rem;
+                font-size:1rem;
+                color:#fff;
+                border: 3px solid #00ea2f;
+                display:inline-block;
+                border-radius:50%;
+                i{
+
+                    margin: 0.2rem;
+                }
+            }
+            dd{
+                color:#fff;
+                @extend %posa;
+                top:1.44rem;
+                left:2.5rem;
+                line-height: 0.6rem;
+                b{
+                    color:#d0ef06;
+                }
+                span{
+                    margin-left:0.2rem;
+                }
+            }
+
+        }
+    }
+}
+.my_asdie{
+	width: 100%;
+	//height: 1.6rem;
+	display: flex;
+	background: #fff;
+    border-bottom:1px solid #dedede;
+	span{
+		-webkit-flex: 1;
+		text-align: center;
+		line-height: 0.7rem;
+		width: 20%;
+        i{
+            font-size:0.55rem;
+            margin-top:0.3rem;
+        }
+        a{
+            color:#6c6c6c;
+        }
+    }
+    span:last-child{
+        border-left:1px solid #dedede;
+        color:#808080;
+    }
+
+}
+
+.my_main{
+	overflow:auto;
+	width: 100%;
+	-webkit-flex: 1;
+	background: #f5f5f5;
+    .my_flex{
+        display: flex;
+        dl{
+            -webkit-flex: 1;
+            width:25%;
+            border-top:1px solid #dedede;
+            border-bottom:1px solid #dedede;
+            margin-top: 15px;
+            background: #fff;
+            dt{
+                padding: 10px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            dd{
+                text-align: center;
+                font-size: 0.28rem;
+                padding-bottom: 10px;
+                font-size:0.27rem;
+                color:black;
+            }
+        }
+    }
+    div:last-child{
+
+        dl{
+            margin: 0;
+            border-top:none;
+        }
+    }
+
+}
+ .my_boot{
+        margin-top:15px;
+        width:100%;
+        border-top:1px solid #dedede;
+        background: #fff;
+        margin-bottom: 30px;
+        p{
+            padding-left: 0.33rem;
+            height:1rem;
+            line-height: 1rem;
+            border-bottom:1px solid #dedede;
+            @extend %posr;
+            span{
+                @extend %posa;
+                right: 0.3rem;
+                i{
+                    font-size: 0.3rem;
+                }
+
+            }
+
+        }
+
+    }

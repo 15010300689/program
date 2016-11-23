@@ -1,0 +1,319 @@
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  color: #333;
+  font-size: 12px; }
+
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.header {
+  width: 100%;
+  height: 0.84rem;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .header h1 {
+    text-align: center;
+    line-height: 0.84rem;
+    font-size: 16px; }
+  .header .back {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -8px; }
+    .header .back:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border: 2px solid transparent;
+      border-top-color: #00AA22;
+      border-left-color: #00AA22;
+      display: block;
+      transform: rotate(-45deg); }
+  .header .search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    color: #00AA22;
+    font-size: 0.36rem; }
+
+.main {
+  -webkit-box-flex: 1;
+  background: #f5f5f5;
+  overflow-y: auto; }
+
+.con {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: #fff; }
+
+.goods {
+  width: 100%;
+  display: -webkit-flex; }
+
+.pic {
+  width: 100px;
+  height: 100px;
+  margin: 10px; }
+  .pic img {
+    width: 100%;
+    height: 100%; }
+
+.txt {
+  -webkit-flex: 1;
+  padding: 10px 10px 0 0; }
+  .txt h2 {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .txt b {
+    color: #333;
+    font-size: 18px; }
+  .txt p {
+    line-height: 24px;
+    overflow: hidden;
+    color: #999; }
+  .txt .pri {
+    margin-top: 5px;
+    color: #ff4000;
+    font-size: 18px; }
+    .txt .pri em {
+      font-size: 14px; }
+    .txt .pri label {
+      font-size: 12px;
+      color: #999; }
+
+.make {
+  white-space: wrap; }
+
+.cf {
+  height: 0.4rem;
+  padding: 0 .12rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border: 1px solid #FF4000;
+  color: #FF4000;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px; }
+
+.infor {
+  border-top: 1px dotted #ccc;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 10px;
+  color: #999; }
+
+.list {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  background: #fff; }
+
+.list_num {
+  width: 100%;
+  height: 0.8rem;
+  font-size: 0;
+  position: relative; }
+
+.shops {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ededed));
+  text-align: center;
+  line-height: 0.8rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+  font-size: 14px;
+  float: left; }
+  .shops .num {
+    color: #00aa22;
+    font-weight: bold; }
+
+.standard {
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ededed));
+  font-size: 14px;
+  line-height: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .standard .dotted {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px; }
+  .standard .angel {
+    position: absolute;
+    right: 10px;
+    top: -4px; }
+  .standard .angel:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border: 2px solid #00aa22;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    -webkit-transform: rotate(-45deg); }
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 0.8rem;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #f5f5f5;
+  z-index: 5;
+  display: none; }
+  .dropdown a {
+    display: block;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 14px;
+    color: #333; }
+  .dropdown .dotted {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px; }
+
+.tab_list {
+  width: 100%;
+  height: 0.84rem;
+  font-size: 0;
+  border-bottom: 1px solid #ccc; }
+  .tab_list a {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 0.84rem; }
+  .tab_list .bj {
+    color: #00aa22; }
+  .tab_list .price {
+    position: relative; }
+  .tab_list .mark {
+    margin-left: 5px; }
+  .tab_list .mark:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: #999;
+    position: absolute;
+    right: center;
+    top: 10px; }
+  .tab_list .mark:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #999;
+    position: absolute;
+    right: center;
+    top: 50%; }
+
+.list_con li {
+  border-bottom: 1px solid #ccc; }
+  .list_con li p {
+    color: #333; }
+.list_con .stitle {
+  display: block;
+  line-height: 24px;
+  position: relative;
+  padding: 10px 0; }
+.list_con .comp {
+  font-size: 12px;
+  margin: 0 100px 0 10px; }
+.list_con .com_name {
+  font-size: 14px; }
+.list_con .score {
+  color: #00aa22;
+  font-style: normal; }
+.list_con .command {
+  height: 24px;
+  margin-left: 10px; }
+.list_con .area {
+  color: #999; }
+.list_con .act {
+  width: 25%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 24px;
+  padding-right: 10px; }
+  .list_con .act:nth-child(1) {
+    color: #00aa22; }
+  .list_con .act i {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 3px;
+    position: relative; }
+    .list_con .act i:after {
+      content: "";
+      width: 9px;
+      height: 5px;
+      border: 1px solid #ccc;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      position: absolute;
+      left: 50%;
+      margin-left: -4px;
+      top: 2px;
+      -webkit-transform: rotate(-45deg); }
+.list_con .des {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #333; }
+  .list_con .des b {
+    display: block;
+    color: #FF4000;
+    font-size: 18px;
+    font-weight: normal; }
+  .list_con .des em {
+    font-size: 14px; }
+  .list_con .des i {
+    padding: 0 3px;
+    font-style: normal; }
+
+.footer {
+  width: 100%;
+  height: 0.92rem;
+  border-top: 1px solid #ccc;
+  font-size: 0;
+  padding: 4px 0; }
+  .footer a {
+    width: 25%;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    color: #333; }
+  .footer i {
+    display: block;
+    font-size: 18px; }
+  .footer span {
+    display: block;
+    padding-top: 4px;
+    font-size: 12px; }
+
+/*# sourceMappingURL=detail.css.map */

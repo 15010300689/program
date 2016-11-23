@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最小最大缩放比例为一，不允许用户手机缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止iOS设备将数字作为拨号连接、邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- webapp应用下状态条(平模顶部条)的颜色，默认值为default(白色或黑色半透明) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从缓存中访问页面内容 -->
+	<meta http-epuiv="Pragma" content="no-cache">
+	<title>登录页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/load.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>登录</h1>
+			<a href="index.html"class="close">×</a>
+			<a href="register.php" class="register">注册</a>
+		</header>
+		<main class="main">
+			<form action="" class="form">
+				<div class="user"><label for="">用户名</label><input type="text" placeholder="用户名/手机/邮箱" id="username"></div>
+				<div class="pwd"><p><label for="">密码</label><input type="text" placeholder="请输入登录密码" id="pwd"></p><a href="javascript:void(0);" class="forget">忘记密码？</a></div>
+				<div class="mark"><label for=""></label><input type="checkbox"><span>自动登录</span></div>
+				<div class="loading">登录</div>
+			</form>
+			<div class="con">
+				<p>合作账号登录</p>
+				<ul>
+					<li><a href="javascript:void(0);"><i></i><span>支付宝</span></a></li>
+					<li><a href="javascript:void(0);"><i></i><span>微信</span></a></li>
+					<li><a href="javascript:void(0);"><i></i><span>QQ</span></a></li>
+					<li><a href="javascript:void(0);"><i></i><span>微博</span></a></li>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<script src="js/setfontsize.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/load.js"></script>
+</body>
+</html>

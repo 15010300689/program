@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最小最大缩放比例为一，不允许用户手机缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止iOS设备将数字作为拨号连接、邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- webapp应用下状态条(平模顶部条)的颜色，默认值为default(白色或黑色半透明) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从缓存中访问页面内容 -->
+	<meta http-epuiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 class="head" id="head">胃肠用药</h1>
+			<a href="index.html" class="back"></a>
+			<a href="javascript:void(0);" class="search"><i class="fa fa-search"></i></a>
+			<a href="javascript:void(0);" class="center"><i class="fa fa-ellipsis-h"></i></a>
+		</header>
+		<main class="main">
+			<div class="catalog_list">
+				<ul class="catalog_list_ul" id="catalog_list_ul">
+					<!-- <li><a href="javascript:void(0);">胃炎</a></li>
+					<li><a href="javascript:void(0);">胃溃疡</a></li>
+					<li><a href="javascript:void(0);">急性肠炎</a></li>
+					<li><a href="javascript:void(0);">十二指肠溃疡</a></li>
+					<li><a href="javascript:void(0);">胆囊炎</a></li>
+					<li><a href="javascript:void(0);">便秘</a></li>
+					<li><a href="javascript:void(0);">消化不良</a></li>
+					<li><a href="javascript:void(0);">痔疮</a></li>
+					<li><a href="javascript:void(0);">腹痛腹泻</a></li> -->
+				</ul>
+				<div class="catalog_more" id="catalog_more">展开全部分类<span>↓</span></div>
+			</div>
+			<div class="catalog_con">
+				<div class="catalog_con_list">
+					<a href="javascript:void(0);" class="bj">默认</a>
+					<a href="javascript:void(0);">价格</a>
+					<a href="javascript:void(0);">报价</a>
+					<a href="javascript:void(0);"><i class="fa fa-th"></i></a>
+				</div>
+				<div class="catalog_detail" id="catalog_detail">
+					<a href="javascript:void(0);" class="catalog_item">
+						<div class="p_img"><img src="images/11.jpg" alt=""></div>
+						<div class="p_con">
+							<h2>济民可信 金水宝胶囊</h2>
+							<p>0.33g*63粒/颗</p>
+							<div class="catalog_price"><strong>￥3.20</strong>起<b><em>223</em>家商家在售</b></div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="catalog_item">
+						<div class="p_img"><img src="images/12.jpg" alt=""></div>
+						<div class="p_con">
+							<h2>济民可信 金水宝胶囊</h2>
+							<p>0.33g*63粒/颗</p>
+							<div class="catalog_price"><strong>￥3.20</strong>起<b><em>223</em>家商家在售</b></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<a href="javascript:void(0);"><i class="fa fa-home"></i><span>首页</span></a>
+			<a href="javascript:void(0);" class="bj"><i class="fa fa-list"></i><span>分类</span></a>
+			<a href="javascript:void(0);"><i class="fa fa-spinner"></i><span>购物车</span></a>
+			<a href="javascript:void(0);"><i class="fa fa-user"></i><span>账号</span></a>
+		</footer>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/setfontsize.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/catalog.js"></script>
+</body>
+</html>
